@@ -7,7 +7,6 @@ The source of the software is here: https://github.com/DominikBuchner/BOLDigger3
 This image contains a running setup.
 
 Usage with Docker:
-
 ```bash
 (user)-$ docker run --rm -v $(pwd):/in -w /in chrishah/boldigger3:1.4.1 boldigger3 identify testdata/test_10.fasta --db 1 --mode 1
 ```
@@ -16,3 +15,5 @@ Usage with Singularity (there will be warnings about installing browsers - this 
 ```bash
 (user)-$ singularity exec docker://chrishah/boldigger3:1.4.1 boldigger3 identify testdata/test_10.fasta --db 1 --mode 1
 ```
+
+Files produced by BOLDigger3 will be in directory `testdata/`.
